@@ -1,0 +1,16 @@
+{
+    "videos": [
+        {
+            "id": 1,
+            "title": "비디오 제목 1",
+            "url": "/videos/video1.mp4",
+            "thumbnail": "/thumbnails/thumb1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "비디오 제목 2",
+            "url": "/videos/video2.mp4",
+            "thumbnail": "/thumbnails/thumb2.jpg"
+        }
+    ]
+}

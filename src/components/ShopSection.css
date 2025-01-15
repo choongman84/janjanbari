@@ -1,0 +1,94 @@
+.shop-section {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+}
+
+.shop-content {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100vh;
+}
+
+.shop-text {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fdfdfd;
+}
+
+.shop-text h2 {
+    font-family: "Yatra One", system-ui;
+    font-size: 4rem;
+    color: #535357;
+    margin-bottom: 2rem;
+}
+
+.shop-text p {
+    font-family: "Yatra One", system-ui;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #b2aaaa;
+    margin-bottom: 3rem;
+    max-width: 80%;
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 0.8rem 1.3rem;
+    background: #57bbed;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.shop-button:hover {
+    background: #0052a3;
+    transform: translateY(-2px);
+}
+
+.shop-image {
+    flex: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .shop-section {
+        height: auto;
+    }
+
+    .shop-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .shop-text {
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .shop-text p {
+        max-width: 100%;
+    }
+
+    .shop-image {
+        height: 50vh;
+    }
+}

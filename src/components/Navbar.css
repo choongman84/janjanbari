@@ -1,0 +1,292 @@
+.main-header {
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #FFA500;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.main-nav a.chathura-regular {
+  font-family: "Chathura", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.main-nav a.text-orange-500 {
+  color: #FFA500;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.search-section .search-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.search-section .search-icon:hover {
+  color: #000;
+}
+
+.search-section.open {
+  position: absolute;
+  right: 100%;
+  margin-right: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.search-section.open input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  animation: slideIn 0.3s ease;
+}
+
+.search-section:not(.open) input {
+  display: none;
+}
+
+.search-section button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.search-section button:hover {
+  color: #000;
+}
+
+.user-btn,
+.wish-btn,
+.cart-btn,
+.search-icon {
+    text-decoration: none;
+    color: #333;
+    font-size: 26px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.button-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.button-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+}
+
+.user-btn:hover .button-tooltip,
+.wish-btn:hover .button-tooltip,
+.cart-btn:hover .button-tooltip,
+.search-icon:hover .button-tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: -35px;
+}
+
+.cart-count {
+  background-color: #666;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes slideIn {
+  from {
+      width: 0;
+      opacity: 0;
+  }
+  to {
+      width: 100%;
+      opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .search-section.open {
+      width: 100%;
+      max-width: 300px;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      margin-right: 0;
+  }
+
+  .main-nav ul {
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .header-actions {
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+      padding: 15px 20px;
+  }
+
+  .main-nav ul {
+      gap: 20px;
+  }
+
+  .main-nav a.chathura-regular {
+      font-size: 24px;
+  }
+
+  .header-actions {
+      gap: 20px;
+  }
+
+  .search-section.open {
+      max-width: 250px;
+  }
+}
+
+.chathura-regular {
+  font-family: "Chathura", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chathura-thin {
+  font-family: "Chathura", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.chathura-light {
+  font-family: "Chathura", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+nav {
+    z-index: 1000;
+}

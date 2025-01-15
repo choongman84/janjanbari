@@ -1,0 +1,40 @@
+const bestProducts = [{
+    description: "홈 셔츠 24/25 화이트",
+    id: "3bdodWXahcx3EBvDHj6I",
+    isSoldOut: false,
+    price: 207000,
+    tags: "케어",
+    thumbnail: "https://shop.realmadrid.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2Frmcfmz0196-01.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201H4RD9NXMKQBQ1WVKM1181VD8%2522%2C%2522tenantId%2522%3A%2522REAL_MADRID%2522%257D&w=1200&q=50",
+    title: "홈 셔츠 24/25 화이트",
+},
+{
+    description: "어웨이 셔츠 24/25 오렌지",
+    id: "i5SSLhPPhIQMWU61MrXj",
+    isSoldOut: false,
+    price: 207000,
+    tags: "케어",
+    thumbnail: "https://shop.realmadrid.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FRMCFMZ0201-1.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201H4RD9NXMKQBQ1WVKM1181VD8%2522%2C%2522tenantId%2522%3A%2522REAL_MADRID%2522%257D&w=750&q=50",
+    title: "어웨이 셔츠 24/25 오렌지",
+},
+{
+    description: "서드 셔츠 24/25 차콜",
+    id: "DqpnneZyrZmhAa3wHsvx",
+    isSoldOut: false,
+    price: 207000,
+    tags: "케어",
+    thumbnail: "https://shop.realmadrid.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FRMCFMZ0204-01.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201H4RD9NXMKQBQ1WVKM1181VD8%2522%2C%2522tenantId%2522%3A%2522REAL_MADRID%2522%257D&w=750&q=50",
+    title: "서드 셔츠 24/25 차콜",
+},
+{
+    description: "골기퍼 셔츠 24/25 블루",
+    id: "yZC7r2wzAuFxtDtWSmI3",
+    isSoldOut: false,
+    price: 207000,
+    tags: "케어",
+    thumbnail: "https://shop.realmadrid.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FRMCFMZ0197_01.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201H4RD9NXMKQBQ1WVKM1181VD8%2522%2C%2522tenantId%2522%3A%2522REAL_MADRID%2522%257D&w=750&q=50",
+    title: "골기퍼 셔츠 24/25 블루",
+},
+];
+export {
+    bestProducts,
+}

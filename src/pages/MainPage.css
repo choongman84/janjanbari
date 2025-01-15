@@ -1,0 +1,15 @@
+.main-container {
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.admin-icon {
+    position: fixed;
+    /* Example positioning */
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #ff4500;
+    /* Example color for the icon */
+}
